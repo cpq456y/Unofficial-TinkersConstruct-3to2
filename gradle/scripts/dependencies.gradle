@@ -52,11 +52,17 @@ dependencies {
     // Full documentation: https://docs.modrinth.com/docs/tutorials/maven/
 
     // Common dependency types (configuration):
-    // implementation = dependency available at both compile time and runtime
-    // runtimeOnly = runtime dependency
-    // compileOnly = compile time dependency
-    // annotationProcessor = annotation processing dependencies
-    // embed = bundle dependencies into final output artifact (no relocation)
+    // implementation = 依赖在编译时和运行时均可用
+    // runtimeOnly = 运行时依赖
+    // compileOnly = 编译依赖
+    // annotationProcessor = 注解处理依赖
+    // embed = 将依赖项打包到最终输出工件中（不重定位）
+    implementation("curse.maven:mantle-74924:2713386")
+    implementation("curse.maven:tinkers-construct-74072:2902483")
+    //implementation("curse.maven:tinkers-antique-1242239:7999105")
+    runtimeOnly("curse.maven:jei-238222:5846804")
+    runtimeOnly("curse.maven:just-enough-characters-250702:7424367")
+    runtimeOnly("curse.maven:jei-integration-265917:2951731")
 
     // Transitive dependencies:
     // (Dependencies that your dependency depends on)
